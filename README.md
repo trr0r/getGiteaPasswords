@@ -63,10 +63,8 @@ options:
 hashcat hashes.txt /ruta/a/wordlist.txt
 ```
 
-## Contribuciones 🤝
+### Advertencia legal ⚠️
 
-Las contribuciones a este proyecto son bienvenidas. Si encuentras errores o tienes mejoras que proponer, abre un **issue** o un **pull request**. ¡Todo aporte es bienvenido! 🙌
+> [!WARNING]
+> Este software está destinado solo para uso personal y debe utilizarse únicamente en entornos controlados y con autorización previa. El empleo de esta herramienta en sistemas o redes sin la debida autorización puede ser ilegal y contravenir políticas de seguridad. El desarrollador no se hace responsable de daños, pérdidas o consecuencias resultantes de su uso inapropiado o no autorizado. Antes de utilizar esta herramienta, asegúrate de cumplir con todas las leyes y regulaciones locales pertinentes.
 
-## Licencia 📜
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
