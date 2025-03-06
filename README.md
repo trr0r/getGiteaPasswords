@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 ## Argumentos del Script 🎯
 
-```bash
+```ps
 usage: getGiteaPasswords.py [-h] -d SQLITE_DB [-w WORDLIST] [-c] [-o OUTPUT_FILE]
 
 ☕ Retrieve Gitea hashes stored in SQLite3 database with pbkdf2 format. ☕ 
