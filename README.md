@@ -41,20 +41,19 @@ python3 GetGiteaPasswords.py -d gitea.db
 
 ![Image](https://github.com/user-attachments/assets/184ac117-a141-4a0b-bdbb-b3575d16c4cc)
 
-2. Crackear los hashes utilizando el archivo `rockyou.txt` **(Forma más lenta)**:
+2. Si deseas usar **Hashcat** para crackear los hashes, puedes usar el archivo generado con el siguiente comando **(Forma más rápida)**:
+
+```bash
+hashcat hashes.txt /ruta/a/wordlist.txt
+```
+
+3. Crackear los hashes utilizando el archivo `rockyou.txt` **(Forma más lenta)**:
 
 ```bash
 python3 GetGiteaPasswords.py -d gitea.db -w rockyou.txt --crack
 ```
 
 ![Image](https://github.com/user-attachments/assets/d89bde31-eaef-4580-a823-9a2baf24baaf)
-
-
-3. Si deseas usar **Hashcat** para crackear los hashes, puedes usar el archivo generado con el siguiente comando **(Forma más rápida)**:
-
-```bash
-hashcat hashes.txt /ruta/a/wordlist.txt
-```
 
 ## Futuras Mejoras 🚀
 
