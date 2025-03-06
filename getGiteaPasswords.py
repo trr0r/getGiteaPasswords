@@ -134,9 +134,6 @@ def crack_hashes(wordlist_filename, credentials):
                     if result:  # If we find a matching password
                         found_password, user = result
                         log.success(f"Password found: {green}{found_password}{reset} for user {green}{user}{reset}")
-                        
-                        executor.shutdown(wait=False, cancel_futures=True)  # Stop processes
-                        return  # Exit function after finding a match
 
 def load_hashes(credentials):
     return {f"{credential[0]}:sha256:{credential[3]}:{credential[2]}:{credential[1]}" for credential in credentials}
