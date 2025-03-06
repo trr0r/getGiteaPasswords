@@ -31,15 +31,6 @@ options:
   -o, --output   OUTPUT_FILE  Output file                                   (default = hashes.txt)
 ```
 
-## Descripción del Script 📝
-
-Este script permite:
-
-1. **Extraer los hashes de contraseñas** desde una base de datos SQLite3 de Gitea.
-2. **Guardar los hashes extraídos** en un archivo con formato compatible con **Hashcat**.
-3. **Crackear los hashes** directamente en el script utilizando una lista de palabras (wordlist).
-4. **Verificar las contraseñas** encontradas para los hashes extraídos.
-
 ## Uso ⚙️
 
 1. Extraer los hashes de `gitea.db` y convertirlos a un formato compatible con Hashcat:
@@ -56,7 +47,7 @@ python3 GetGiteaPasswords.py -d gitea.db -w rockyou.txt --crack
 
 ## Información Adicional 🔍
 
-- Si deseas usar **Hashcat** para crackear los hashes, puedes usar el archivo `hashes.txt` generado con el siguiente comando (Forma más rápida):
+1. Si deseas usar **Hashcat** para crackear los hashes, puedes usar el archivo generado con el siguiente comando **(Forma más rápida)**:
 
 ```bash
 hashcat hashes.txt /ruta/a/wordlist.txt
@@ -66,4 +57,3 @@ hashcat hashes.txt /ruta/a/wordlist.txt
 
 > [!WARNING]
 > Este software está destinado solo para uso personal y debe utilizarse únicamente en entornos controlados y con autorización previa. El empleo de esta herramienta en sistemas o redes sin la debida autorización puede ser ilegal y contravenir políticas de seguridad. El desarrollador no se hace responsable de daños, pérdidas o consecuencias resultantes de su uso inapropiado o no autorizado. Antes de utilizar esta herramienta, asegúrate de cumplir con todas las leyes y regulaciones locales pertinentes.
-

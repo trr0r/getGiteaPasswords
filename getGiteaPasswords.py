@@ -87,8 +87,8 @@ def save_credentials_to_file(credentials, output_file):
     f = open(output_file, "a")
     for credential in credentials:
         user = credential[0]
-        digest = base64.b64encode(bytes.fromhex(credential[1])).decode("utf-8")
-        salt =  base64.b64encode(bytes.fromhex(credential[2])).decode("utf-8")
+        digest = b64encode(bytes.fromhex(credential[1])).decode("utf-8")
+        salt =  b64encode(bytes.fromhex(credential[2])).decode("utf-8")
         hash = f"{user}:sha256:{credential[3]}:{salt}:{digest}\n"
         f.write(hash)
     p.success("All hashes have been saved correctly")
