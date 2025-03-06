@@ -24,11 +24,17 @@ options:
   -o, --output   OUTPUT_FILE  Output file                                   (default = hashes.txt)
 ```
 
-## Requisitos 🚀
+## Descarga 📥
 
-Puedes instalar todas las dependencias necesarias usando `pip`:
+Nos clonamos el repositorio de la siguiente forma:
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/trr0r/getGiteaPasswords
+cd getGiteaPasswords
+```
+
+Instalamos las librerías necesarias gracias a `pip3`:
+```bash
+pip3 install -r requirements.txt
 ```
 
 ## Uso ⚙️
