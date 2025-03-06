@@ -65,6 +65,7 @@ Planeamos agregar nuevas funcionalidades para hacer el script aún más potente 
 
 ¡Si tienes alguna sugerencia o mejora, no dudes en contribuir al proyecto! 🎉
 
+---
 ### Advertencia legal ⚠️
 
 > [!WARNING]
