@@ -39,11 +39,15 @@ pip install -r requirements.txt
 python3 GetGiteaPasswords.py -d gitea.db
 ```
 
+![Image](https://github.com/user-attachments/assets/184ac117-a141-4a0b-bdbb-b3575d16c4cc)
+
 2. Crackear los hashes utilizando el archivo `rockyou.txt` **(Forma más lenta)**:
 
 ```bash
 python3 GetGiteaPasswords.py -d gitea.db -w rockyou.txt --crack
 ```
+
+![Image](https://github.com/user-attachments/assets/d89bde31-eaef-4580-a823-9a2baf24baaf)
 
 ## Información Adicional 🔍
 
@@ -57,8 +61,8 @@ hashcat hashes.txt /ruta/a/wordlist.txt
 
 Planeamos agregar nuevas funcionalidades para hacer el script aún más potente y versátil:
 
-- 🔹 **Exportación de resultados en múltiples formatos** como JSON o CSV.
-- 🔹 **Implementación de un potfile (almacén de hashes crackeados)** para evitar volver a crackear contraseñas ya resueltas y mejorar la eficiencia. 🚀
+- **Exportación de resultados en múltiples formatos** como JSON o CSV.
+- **Implementación de un potfile (almacén de hashes crackeados)** para evitar volver a crackear contraseñas ya resueltas y mejorar la eficiencia. 🚀
 
 ¡Si tienes alguna sugerencia o mejora, no dudes en contribuir al proyecto! 🎉
 
