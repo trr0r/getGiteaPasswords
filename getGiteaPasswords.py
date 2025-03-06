@@ -11,11 +11,11 @@ from concurrent.futures import ProcessPoolExecutor
 from argformat import StructuredFormatter
 
 # Global Variables
-yellow = Fore.YELLOW
-white = Fore.WHITE
-blue = Fore.BLUE
-cyan = Fore.CYAN
-magenta = Fore.MAGENTA
+yellow = Fore.YELLOW # Yellow Text
+white = Fore.WHITE # White Text
+blue = Fore.BLUE # Blue Text
+cyan = Fore.CYAN # Cyan Text
+magenta = Fore.MAGENTA # Magenta Text
 red = Fore.RED  # Red Text
 green = Fore.GREEN  # Green Text
 bold = Style.BRIGHT  # Bold Text
