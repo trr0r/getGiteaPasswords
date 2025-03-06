@@ -4,33 +4,9 @@ Este script de Python permite extraer y crackear hashes de contraseñas almacena
 
 ## Requisitos 🚀
 
-
 Puedes instalar todas las dependencias necesarias usando `pip`:
 ```bash
 pip install -r requirements.txt
-```
-
-## Descripción del Script 📝
-
-Este script permite:
-
-1. **Extraer los hashes de contraseñas** desde una base de datos SQLite3 de Gitea.
-2. **Guardar los hashes extraídos** en un archivo con formato compatible con **Hashcat**.
-3. **Crackear los hashes** directamente en el script utilizando una lista de palabras (wordlist).
-4. **Verificar las contraseñas** encontradas para los hashes extraídos.
-
-## Uso ⚙️
-
-1. Extraer los hashes de `gitea.db` y convertirlos a un formato compatible con Hashcat:
-
-```bash
-python3 GetGiteaPasswords.py -d gitea.db
-```
-
-2. Crackear los hashes utilizando el archivo `rockyou.txt`:
-
-```bash
-python3 GetGiteaPasswords.py -d gitea.db -w rockyou.txt --crack
 ```
 
 ## Argumentos del Script 🎯
@@ -55,9 +31,32 @@ options:
   -o, --output   OUTPUT_FILE  Output file                                   (default = hashes.txt)
 ```
 
+## Descripción del Script 📝
+
+Este script permite:
+
+1. **Extraer los hashes de contraseñas** desde una base de datos SQLite3 de Gitea.
+2. **Guardar los hashes extraídos** en un archivo con formato compatible con **Hashcat**.
+3. **Crackear los hashes** directamente en el script utilizando una lista de palabras (wordlist).
+4. **Verificar las contraseñas** encontradas para los hashes extraídos.
+
+## Uso ⚙️
+
+1. Extraer los hashes de `gitea.db` y convertirlos a un formato compatible con Hashcat:
+
+```bash
+python3 GetGiteaPasswords.py -d gitea.db
+```
+
+2. Crackear los hashes utilizando el archivo `rockyou.txt` **(Forma más lenta)**:
+
+```bash
+python3 GetGiteaPasswords.py -d gitea.db -w rockyou.txt --crack
+```
+
 ## Información Adicional 🔍
 
-- Si deseas usar **Hashcat** para crackear los hashes, puedes usar el archivo `hashes.txt` generado con el siguiente comando:
+- Si deseas usar **Hashcat** para crackear los hashes, puedes usar el archivo `hashes.txt` generado con el siguiente comando (Forma más rápida):
 
 ```bash
 hashcat hashes.txt /ruta/a/wordlist.txt
