@@ -53,6 +53,15 @@ python3 GetGiteaPasswords.py -d gitea.db -w rockyou.txt --crack
 hashcat hashes.txt /ruta/a/wordlist.txt
 ```
 
+## Futuras Mejoras 🚀
+
+Planeamos agregar nuevas funcionalidades para hacer el script aún más potente y versátil:
+
+- 🔹 **Exportación de resultados en múltiples formatos** como JSON o CSV.
+- 🔹 **Implementación de un potfile (almacén de hashes crackeados)** para evitar volver a crackear contraseñas ya resueltas y mejorar la eficiencia. 🚀
+
+¡Si tienes alguna sugerencia o mejora, no dudes en contribuir al proyecto! 🎉
+
 ### Advertencia legal ⚠️
 
 > [!WARNING]
