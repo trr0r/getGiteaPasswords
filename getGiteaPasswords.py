@@ -31,7 +31,6 @@ signal.signal(signal.SIGINT, ctrl_c)
 
 # Function to get arguments
 def get_args():
-    # "\u2620\ufe0f SSH Log Poisoning with LFI → Automated Reverse Shell \u2620\ufe0f\n\nej: python3 autopoison.py -u http://172.17.0.2/vuln.php -pm file -t-ip 172.17.0.1 -h-ip 172.17.0.2"
     parser = argparse.ArgumentParser(description=f"☕ {green + bold}Retrieve Gitea hashes stored in SQLite3 database with {magenta + bold}pbkdf2{reset}{green + bold} format.{reset} ☕ \n \n\n\t{blue + bold}Format{reset} {magenta + bold}pbkdf2{reset} {blue}hashes into hashcat format{reset} {red + bold}(Fastest Method){reset}:\n\t\t{white}❯ python3{reset} {blue}getGiteaPasswords.py{reset} {green}-d gitea.db{reset}\n\n\t{blue + bold}Crack hashes directly within the script{reset} {red + bold}(Slowest Method){reset}:\n\t\t{white}❯ python3{reset} {blue}getGiteaPasswords.py{reset} {green}-d gitea.db{reset} {red}-w rockyou.txt{reset} {yellow}--crack{reset}", formatter_class=StructuredFormatter)
 
     parser.add_argument("-d", f"--database", required=True, dest="sqlite_db", help=f"{blue + bold}SQLite3 database file{reset}")
