@@ -2,14 +2,7 @@
 
 Este script de Python permite extraer y crackear hashes de contraseñas almacenados en una base de datos SQLite3 de Gitea. Los hashes extraídos están en formato **PBKDF2** y pueden ser convertidos a un formato compatible con **Hashcat** para su posterior cracking. Además, el script puede realizar el cracking de los hashes directamente dentro del propio script utilizando un diccionario de contraseñas.
 
-## Requisitos 🚀
-
-Puedes instalar todas las dependencias necesarias usando `pip`:
-```bash
-pip install -r requirements.txt
-```
-
-## Argumentos del Script 🎯
+Las opciones disponibles son las siguientes:
 
 ```ps
 usage: getGiteaPasswords.py [-h] -d SQLITE_DB [-w WORDLIST] [-c] [-o OUTPUT_FILE]
@@ -29,6 +22,13 @@ options:
   -w, --wordlist WORDLIST     Wordlist file
   -c, --crack                 Add this option to crack hashes in the script
   -o, --output   OUTPUT_FILE  Output file                                   (default = hashes.txt)
+```
+
+## Requisitos 🚀
+
+Puedes instalar todas las dependencias necesarias usando `pip`:
+```bash
+pip install -r requirements.txt
 ```
 
 ## Uso ⚙️
