@@ -44,7 +44,7 @@ python3 GetGiteaPasswords.py -d gitea.db
 2. Si deseas usar **Hashcat** para crackear los hashes, puedes usar el archivo generado con el siguiente comando **(Forma más rápida)**:
 
 ```bash
-hashcat hashes.txt /ruta/a/wordlist.txt
+hashcat hashes.txt /ruta/a/wordlist.txt --user
 ```
 
 3. Crackear los hashes utilizando el archivo `rockyou.txt` **(Forma más lenta)**:
