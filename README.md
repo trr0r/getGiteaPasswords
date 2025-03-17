@@ -1,6 +1,6 @@
 # Gitea Hash Extractor & Cracker 🔒💻
 
-Este script de Python permite extraer y crackear hashes de contraseñas almacenados en una base de datos SQLite3 de Gitea. Los hashes extraídos están en formato **PBKDF2** y pueden ser convertidos a un formato compatible con **Hashcat** para su posterior cracking. Además, el script puede realizar el cracking de los hashes directamente dentro del propio script utilizando un diccionario de contraseñas.
+Este script de Python permite extraer y crackear hashes de contraseñas almacenados en una base de datos SQLite3 de **Gitea**. Los hashes extraídos están en formato **PBKDF2** y pueden ser convertidos a un formato compatible con **Hashcat** para su posterior cracking. Además, el script puede realizar el cracking de los hashes directamente dentro del propio script utilizando un diccionario de contraseñas.
 
 Las opciones disponibles son las siguientes:
 
