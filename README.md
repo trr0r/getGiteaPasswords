@@ -24,6 +24,7 @@ options:
   -o, --output   OUTPUT_FILE  Output file                                   (default = hashes.txt)
 ```
 
+___
 ## Descarga 📥
 
 Nos clonamos el repositorio de la siguiente forma:
@@ -37,6 +38,7 @@ Instalamos las librerías necesarias gracias a `pip3`:
 pip3 install -r requirements.txt
 ```
 
+___
 ## Uso ⚙️
 
 1. Extraer los hashes de `gitea.db` y convertirlos a un formato compatible con Hashcat:
@@ -61,6 +63,7 @@ python3 GetGiteaPasswords.py -d gitea.db -w rockyou.txt --crack
 
 ![Image](https://github.com/user-attachments/assets/d89bde31-eaef-4580-a823-9a2baf24baaf)
 
+___
 ## Futuras Mejoras 🚀
 
 Planeamos agregar nuevas funcionalidades para hacer el script aún más potente y versátil:
