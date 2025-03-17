@@ -41,7 +41,7 @@ pip3 install -r requirements.txt
 ___
 ## Uso ⚙️
 
-1. Extraer los hashes de `gitea.db` y convertirlos a un formato compatible con Hashcat:
+1. Extraer los hashes de `gitea.db` y convertirlos a un formato compatible con **Hashcat**:
 
 ```bash
 python3 GetGiteaPasswords.py -d gitea.db
